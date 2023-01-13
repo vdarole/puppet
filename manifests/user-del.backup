@@ -1,0 +1,8 @@
+user { 'ansible':
+  ensure             => 'absent',
+  
+  home               => '/home/ansible',
+  managehome => true,  
+#provider           => 'userdel',
+}
+

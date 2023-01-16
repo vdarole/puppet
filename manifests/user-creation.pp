@@ -22,6 +22,7 @@ changes => [
 "set spec[user = 'ansible']/host_group/host ALL",
 "set spec[user = 'ansible']/host_group/command ALL",
 "set spec[user = 'ansible']/host_group/command/runas_user ALL",
+"set spec[user = 'ansible']/host_group/command/tag NOPASSWD",
 ],
 }
 

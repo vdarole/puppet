@@ -1,0 +1,24 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+
+
+192.168.2.210 kvm01.darole.org kvm01
+192.168.2.220 kvm02.darole.org kvm02
+192.168.2.230 kub01.darole.org kub01
+192.168.2.240 dock01.darole.org dock01
+192.168.2.250 jen01.darole.org jen01
+192.168.2.200 win01.darole.org win01
+
+
+192.168.2.211 lamp01.darole.org lamp01
+192.168.2.212 zap01.darole.org zap01
+192.168.2.213 pup01.darole.org pup01
+
+
+192.168.2.221 web01.darole.org web01
+192.168.2.222 db01.darole.org db01
+192.168.2.223 ans01.darole.org ans01
+
+192.168.2.215   ninom.darole.org
+192.168.2.216   online-education.darole.org
+192.168.2.217   organic-farm.darole.org

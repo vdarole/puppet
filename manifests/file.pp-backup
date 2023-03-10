@@ -1,0 +1,19 @@
+file {'motd':  #Creation of /etc/motd file
+path => '/etc/motd',
+content => 
+'###############################################################
+# Welcome to DAROLE.ORG                                     
+# All connections are monitored and recorded                  
+# Disconnect IMMEDIATELY if you are not an authorized user!   
+###############################################################',
+}
+file { '/etc/issue': ### Creation of /etc/issue file
+ensure => present,
+content => "\S
+Kernel \r on an \m
+Today is \d \t @ \n",
+mode => '0644',
+owner => 'root',
+group => 'root',
+path => $issue_file_path,
+}

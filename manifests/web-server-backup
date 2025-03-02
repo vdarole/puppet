@@ -1,0 +1,22 @@
+
+######## Package installation on VVM02  ###################
+node 'lamp01.darole.org' {              # Applies only to mentioned lamp01
+package { "httpd":                      # Install HTTPD package
+ensure => present,                      #
+ }
+service { "httpd":                      # Service httpd start
+ensure => running,
+require => Package["httpd"],            # Required httpd package to start the service
+ }
+file { "/var/www/html/index.html":      # Create index.html file.
+ensure => file,
+content => "Welcome to Puppet!!",
+notify => Service["httpd"],             # if the any change is index.html it will restart the httpd services.
+replace => false
+ }
+exec    { "test":
+command => '/bin/echo apache2 is installed on lamp01 > /root/httpd_status.txt',
+        onlyif => '/bin/which httpd',
+
+        }
+}

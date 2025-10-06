@@ -1,5 +1,5 @@
 if $::osfamily == 'RedHat' {
-        $packages = ['ftp', 'telnet', 'sysstat' ,'nfs-utils','mailx','net-tools','wget','git',]
+        $packages = ['ftp', 'telnet', 'sysstat' ,'nfs-utils','mailx','net-tools','wget','git','rsyslog','postfix']
         package { $packages:
         ensure => "installed",
         provider => 'yum',
